@@ -2,10 +2,9 @@
 
 namespace Vsite.CSharp
 {
-
     class Riba
     {
-        void PokreniSe()
+        public void PokreniSe()
         {
             Console.WriteLine("Plivam");
         }
@@ -13,7 +12,7 @@ namespace Vsite.CSharp
 
     class Gmaz
     {
-        void PokreniSe()
+        public void PokreniSe()
         {
             Console.WriteLine("Gmižem");
         }
@@ -21,7 +20,7 @@ namespace Vsite.CSharp
 
     class Ptica
     {
-        void PokreniSe()
+        public void PokreniSe()
         {
             Console.WriteLine("Letim");
         }
@@ -29,7 +28,7 @@ namespace Vsite.CSharp
 
     class Sisavac
     {
-        void PokreniSe()
+        public void PokreniSe()
         {
             Console.WriteLine("Trčim");
         }

@@ -1,18 +1,26 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A2766910-80A9-4A96-84C8-E38831D6BD1D}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{A2766910-80A9-4A96-84C8-E38831D6BD1D}"
 	ProjectSection(SolutionItems) = preProject
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipskiNesigurneKolekcije", "TipskiNesigurneKolekcije\TipskiNesigurneKolekcije.csproj", "{6E754B35-86E6-4363-8134-CA04747053A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneričkeKolekcije", "GenerickeKolekcije\GeneričkeKolekcije.csproj", "{62236DBD-2105-46AA-A894-EA6BF9BA8676}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerickeKolekcije", "GenerickeKolekcije\GenerickeKolekcije.csproj", "{62236DBD-2105-46AA-A894-EA6BF9BA8676}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneričkeKolekcijeSRazličitimTipovima", "GenerickeKolekcijeSRazlicitimTipovima\GeneričkeKolekcijeSRazličitimTipovima.csproj", "{975C071F-702C-4520-BF67-6A63A9818A96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerickeKolekcijeSRazlicitimTipovima", "GenerickeKolekcijeSRazlicitimTipovima\GenerickeKolekcijeSRazlicitimTipovima.csproj", "{975C071F-702C-4520-BF67-6A63A9818A96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneričkeKolekcijeSRazličitimParametrima", "GenerickeKolekcijeSRazlicitimParametrima\GeneričkeKolekcijeSRazličitimParametrima.csproj", "{E3004D8A-FF6F-496D-BDD0-75C6E9BB91CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerickeKolekcijeSRazlicitimParametrima", "GenerickeKolekcijeSRazlicitimParametrima\GenerickeKolekcijeSRazlicitimParametrima.csproj", "{E3004D8A-FF6F-496D-BDD0-75C6E9BB91CF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00", "00", "{795CBF01-A841-47A0-B334-2CCBBD2185B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testovi", "Testovi\Testovi.csproj", "{4FEA2F3E-3A45-4B25-B01F-66BCFBA7AD62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{6CDB2CC2-D3F4-4E55-BE39-3A9744617261}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02", "02", "{BF7793BB-E8E6-4A5F-A815-751DE3DD8A03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6E754B35-86E6-4363-8134-CA04747053A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E754B35-86E6-4363-8134-CA04747053A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E754B35-86E6-4363-8134-CA04747053A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E754B35-86E6-4363-8134-CA04747053A2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{62236DBD-2105-46AA-A894-EA6BF9BA8676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{62236DBD-2105-46AA-A894-EA6BF9BA8676}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62236DBD-2105-46AA-A894-EA6BF9BA8676}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,8 +40,17 @@ Global
 		{E3004D8A-FF6F-496D-BDD0-75C6E9BB91CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3004D8A-FF6F-496D-BDD0-75C6E9BB91CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3004D8A-FF6F-496D-BDD0-75C6E9BB91CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FEA2F3E-3A45-4B25-B01F-66BCFBA7AD62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEA2F3E-3A45-4B25-B01F-66BCFBA7AD62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEA2F3E-3A45-4B25-B01F-66BCFBA7AD62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEA2F3E-3A45-4B25-B01F-66BCFBA7AD62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62236DBD-2105-46AA-A894-EA6BF9BA8676} = {795CBF01-A841-47A0-B334-2CCBBD2185B1}
+		{975C071F-702C-4520-BF67-6A63A9818A96} = {6CDB2CC2-D3F4-4E55-BE39-3A9744617261}
+		{E3004D8A-FF6F-496D-BDD0-75C6E9BB91CF} = {BF7793BB-E8E6-4A5F-A815-751DE3DD8A03}
 	EndGlobalSection
 EndGlobal

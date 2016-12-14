@@ -1,28 +1,50 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Vsite.CSharp
 {
-    class Program
+    public class GeneričkeKolekcije
     {
-        static void Main(string[] args)
+        public static void TipskiNesigurnaKolekcija()
+        {
+            ArrayList osobe = new ArrayList();
+            // TODO: U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
+
+
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
+
+            // TODO: U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
+
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
+        }
+
+        public static void GeneričkaKolekcija()
         {
             List<Osoba> osobe = new List<Osoba>();
-            osobe.Add(new Osoba("Marica", new DateTime(1989, 12, 1)));
-            osobe.Add(new Osoba("Ivica", new DateTime(1993, 4, 2)));
+            // TODO: Ponoviti dodavananja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
 
-            // TODO: Napisati naredbu kojom se u kolekciju 'osobe' dodaje objekt nekog drugog tipa, npr. DateTime.Now i provjeriti što će prevoditelj javiti.
+        }
 
-
-
-            // TODO: U donju petlju umetnuti naredbu koja će ispisati član 'Ime' svake osobe. Pokrenuti program i provjeriti ispis.
-            foreach (var osoba in osobe)
+        static void Main(string[] args)
+        {
+            Console.WriteLine("TipskiNesigurnaKolekcija:");
+            try
             {
-
+                TipskiNesigurnaKolekcija();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
             }
 
+            Console.WriteLine("GeneričkaKolekcija:");
+            GeneričkaKolekcija();
+
             Console.WriteLine("Gotovo!!!");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
