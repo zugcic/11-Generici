@@ -16,12 +16,21 @@ namespace Vsite.CSharp
             {
                 Console.WriteLine("\"{0}\" = {1}", e.Key, e.Value);
             }
+			
 
-            Console.WriteLine();
-
-            // TODO: Deklarirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. Prevesti program, pokrenuti ga i provjeriti ispis.
-
-        }
+			// deklarirati novi rječnik tipa dictionary<string, int>, 
+			//pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
+			//prevesti program, pokrenuti ga i provjeriti ispis.
+			Dictionary<string, int> brojevi1 = new Dictionary<string, int>();
+			
+			brojevi1 = brojevi;
+			
+			foreach (var e in brojevi1)
+			{
+				Console.WriteLine("\"{0}\" = {1}", e.Key, e.Value);
+			}
+			
+		}
 
         public static void PridruživanjeDvijuKolekcijaSRazličitimParametrima()
         {
@@ -30,10 +39,23 @@ namespace Vsite.CSharp
             numbers.Add("two", "dva");
             numbers.Add("three", "tri");
 
-            // TODO: Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
-            //brojevi = numbers;
+			// Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
+			//brojevi=numbers;
+			// "The name 'brojevi does not exist in current context'"
+			
+			Dictionary<string,int> brojevi = new Dictionary<string, int>();
+			//brojevi = numbers; //Nije dozvoljeno pridruživanje sa parametrima različith tipova
+			 /*
+			Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string, string>' 
+			to 'System.Collections.Generic.Dictionary<string, int>'
+			*/
 
-            foreach (var e in numbers)
+			brojevi.Add("jedan", 1);
+			brojevi.Add("dva", 2);
+			brojevi.Add("tri", 3);
+			
+
+			foreach (var e in numbers)
             {
                 Console.WriteLine("\"{0}\" = {1}", e.Key, e.Value);
             }
@@ -44,7 +66,7 @@ namespace Vsite.CSharp
         {
             PridruživanjeDvijuKolekcijaSIstimParametrima();
 
-            PridruživanjeDvijuKolekcijaSRazličitimParametrima();
+          //  PridruživanjeDvijuKolekcijaSRazličitimParametrima();
 
             Console.WriteLine("Gotovo!!!");
             Console.ReadKey();
